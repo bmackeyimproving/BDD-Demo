@@ -1,19 +1,32 @@
-import './App.css'
-import HelloWorld from './Components/HelloWorld'
-import Greeting from './Components/Greeting';
-import Adder from './Components/Adder';
+import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import PageOne from './pages/PageOne';
+import PageTwo from './pages/PageTwo';
+import { Box, List, ListItemButton } from '@mui/material';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+const theme = createTheme();
 
 function App() {
   return (
-    <>
-      <h1>BDD</h1>
-      <div className="card">
-        <HelloWorld />
-        <Greeting name="Alice" />
-        <Adder />
-      </div>
-    </>
-  )
+    <ThemeProvider theme={theme}>
+      <Router>
+        <nav>
+          <Box>
+            <List sx={{ display: 'flex' }}>
+              <ListItemButton component={Link} to="/">Page One</ListItemButton>
+              <ListItemButton component={Link} to="/page-two">Page Two</ListItemButton>
+            </List>
+          </Box>
+        </nav>
+        <Routes>
+          <Route path="/" element={<PageOne />} />
+          <Route path="/page-two" element={<PageTwo />} />
+        </Routes>
+      </Router>
+    </ThemeProvider>
+  );
 }
 
-export default App
+export default App;
