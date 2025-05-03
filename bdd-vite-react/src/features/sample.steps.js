@@ -1,7 +1,7 @@
 const { Given, Then, When } = require('@cucumber/cucumber');
 const { render, screen, cleanup, fireEvent } = require('@testing-library/react');
 const React = require('react');
-const HelloWorld = require('../HelloWorld').default;
+const HelloWorld = require('../Components/HelloWorld').default;
 
 Given('I am on the Hello World component', function () {
   render(React.createElement(HelloWorld));

@@ -1,7 +1,7 @@
 import './App.css'
-import HelloWorld from './HelloWorld'
-import Greeting from './Greeting';
-import Adder from './Adder';
+import HelloWorld from './Components/HelloWorld'
+import Greeting from './Components/Greeting';
+import Adder from './Components/Adder';
 
 function App() {
   return (
