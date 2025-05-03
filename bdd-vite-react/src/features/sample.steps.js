@@ -12,7 +12,11 @@ Given('I am on the Hello World component with text {string}', function (customTe
 });
 
 When('I click the button', function () {
-  fireEvent.click(screen.getByRole('button'));
+  fireEvent.click(screen.getByRole('button', { name: /clicked/i }));
+});
+
+When('I click the reset button', function () {
+  fireEvent.click(screen.getByRole('button', { name: /reset/i }));
 });
 
 Then('I should see {string}', function (text) {

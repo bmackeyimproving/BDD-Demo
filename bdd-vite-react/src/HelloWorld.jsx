@@ -8,6 +8,9 @@ export default function HelloWorld({ text = "Hello World" }) {
       <button onClick={() => setCount((c) => c + 1)}>
         Clicked {count} times
       </button>
+      <button onClick={() => setCount(0)}>
+        Reset
+      </button>
     </div>
   );
 }
