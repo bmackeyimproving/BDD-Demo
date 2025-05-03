@@ -25,13 +25,8 @@ Then('I should see text {string}', function (expectedText) {
   cleanup();
 });
 
-Then('I should see complex text {string}', function (text) {
-  const regex = new RegExp(text.replace(/ /g, '\\s*'), 'i');
-  const elements = screen.getAllByText((content, element) => {
-    const hasText = (node) => node.textContent.match(regex);
-    const node = element;
-    return hasText(node);
-  });
-  expect(elements.length).to.be.greaterThan(0);
+Then('I should see complex text {string}', function (expectedText) {
+  const elements = screen.getAllByText(expectedText); // Declare elements
+  expect(elements.length).to.be.equal(1); // Ensure at least one match
   cleanup();
 });
