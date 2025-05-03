@@ -19,14 +19,20 @@ When('I render the Greeting component', function () {
   render(<Greeting name={this.name} />);
 });
 
-Then('I should see text {string}', function (expectedText) {
+Then('I should see {string} message twice because it is in 2 components', function (expectedText) {
   const elements = screen.getAllByText(expectedText); // Declare elements
-  expect(elements.length).to.be.greaterThan(0); // Ensure at least one match
+  if (elements.length !== 2) {
+    screen.debug(); // Log the current DOM state
+  }
+  expect(elements.length).to.be.equal(2); // Ensure at least one match
   cleanup();
 });
 
-Then('I should see complex text {string}', function (expectedText) {
+Then('I should see text {string}', function (expectedText) {
   const elements = screen.getAllByText(expectedText); // Declare elements
+  if (elements.length !== 1) {
+    screen.debug(); // Log the current DOM state
+  }
   expect(elements.length).to.be.equal(1); // Ensure at least one match
   cleanup();
 });

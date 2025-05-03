@@ -11,7 +11,7 @@ Feature: Farewell Component
   Scenario Outline: Display personalized message
     Given I have a name "<name>"
     When I render the Farewell component
-    Then I should see complex text "Goodbye, <name>!"
+    Then I should see text "Goodbye, <name>!"
 
     Examples:
       | name  |

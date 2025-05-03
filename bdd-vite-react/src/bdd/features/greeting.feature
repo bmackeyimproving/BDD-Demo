@@ -6,4 +6,4 @@ Feature: Greeting Component
   Scenario: Display greeting message
     Given I have a name "Alice"
     When I render the Greeting component
-    Then I should see text "Hello, Alice!"
+    Then I should see "Hello, Alice!" message twice because it is in 2 components
