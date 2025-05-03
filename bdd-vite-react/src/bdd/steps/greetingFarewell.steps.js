@@ -2,8 +2,8 @@ const { Given, When, Then } = require('@cucumber/cucumber');
 const { render, screen } = require('@testing-library/react');
 const React = require('react');
 const { expect } = require('chai');
-const Farewell = require('../Components/Farewell').default;
-const Greeting = require('../Components/Greeting').default;
+const Farewell = require('../../Components/Farewell').default;
+const Greeting = require('../../Components/Greeting').default;
 
 Given('I have a name {string}', function (name) {
   this.name = name;

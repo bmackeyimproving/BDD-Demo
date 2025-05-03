@@ -2,7 +2,7 @@ export default [
   '--require-module',
   '@babel/register',
   '--require',
-  './src/features/support.js',
+  './src/bdd/support.js',
   '--require',
   './src/**/*.steps.js',
   './src/**/*.feature',
