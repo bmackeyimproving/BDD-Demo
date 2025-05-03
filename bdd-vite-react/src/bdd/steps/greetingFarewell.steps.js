@@ -1,11 +1,13 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
-const { render, screen } = require('@testing-library/react');
+const { render, screen, cleanup } = require('@testing-library/react');
 const React = require('react');
 const { expect } = require('chai');
 const Farewell = require('../../Components/Farewell').default;
 const Greeting = require('../../Components/Greeting').default;
 
 Given('I have a name {string}', function (name) {
+  console.log('name comes in as' + name)
+  console.log(name);
   this.name = name;
 });
 
@@ -20,4 +22,16 @@ When('I render the Greeting component', function () {
 Then('I should see text {string}', function (expectedText) {
   const elements = screen.getAllByText(expectedText); // Declare elements
   expect(elements.length).to.be.greaterThan(0); // Ensure at least one match
+  cleanup();
+});
+
+Then('I should see complex text {string}', function (text) {
+  const regex = new RegExp(text.replace(/ /g, '\\s*'), 'i');
+  const elements = screen.getAllByText((content, element) => {
+    const hasText = (node) => node.textContent.match(regex);
+    const node = element;
+    return hasText(node);
+  });
+  expect(elements.length).to.be.greaterThan(0);
+  cleanup();
 });
