@@ -6,8 +6,6 @@ const Farewell = require('../../Components/Farewell').default;
 const Greeting = require('../../Components/Greeting').default;
 
 Given('I have a name {string}', function (name) {
-  console.log('name comes in as' + name)
-  console.log(name);
   this.name = name;
 });
 
