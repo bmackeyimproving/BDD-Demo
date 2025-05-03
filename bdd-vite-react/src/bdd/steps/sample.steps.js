@@ -20,6 +20,9 @@ When('I click the reset button', function () {
 });
 
 Then('I should see {string}', function (text) {
-  screen.getByText(text);
+  const elements = screen.getAllByText(text);
+  if (elements.length === 0) {
+    throw new Error(`No elements found with the text: ${text}`);
+  }
   cleanup();
 });
