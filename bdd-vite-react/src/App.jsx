@@ -12,7 +12,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Router>
-        <nav>
+        <nav className="fixed-nav">
           <Box>
             <List sx={{ display: 'flex' }}>
               <ListItemButton component={Link} to="/">Page One</ListItemButton>
