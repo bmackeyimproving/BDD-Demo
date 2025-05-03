@@ -5,6 +5,7 @@ import './App.css'
 import HelloWorld from './HelloWorld'
 import Greeting from './Greeting';
 import Farewell from './Farewell';
+import Adder from './Adder';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
       <div className="card">
         <HelloWorld />
         <Greeting name="Alice" />
+        <Adder />
       </div>
     </>
   )
