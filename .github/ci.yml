@@ -22,10 +22,16 @@ jobs:
         node-version: '16'
 
     - name: Install dependencies
-      run: npm install
+      run: |
+        cd bdd-vite-react
+        npm install
 
     - name: Run unit tests
-      run: npm test
+      run: |
+        cd bdd-vite-react
+        npm test
 
     - name: Run BDD tests
-      run: npm run bdd
+      run: |
+        cd bdd-vite-react
+        npm run bdd
