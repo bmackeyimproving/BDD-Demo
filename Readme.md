@@ -3,16 +3,19 @@ A Project template for React + Cucumber + Jest + Vite
 Uses Github Actions for CI/CD
 
 
-# All commands run from FE base directory
+## All commands run from FE base directory
 cd bdd-vite-react
 
-# Setup
+## Setup
 npm install
-## Launches to http://localhost:5173/
+### Launches to http://localhost:5173/
 npm run dev
 
-# Run unit tests
+## Run unit tests
 npm test
 
-# Run BDD tests
+## Run BDD tests
 npm run bdd
+
+# Component library
+https://mui.com/material-ui/react-tabs/
