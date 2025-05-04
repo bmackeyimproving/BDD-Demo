@@ -5,6 +5,7 @@ import { createEsbuildPlugin } from '@badeball/cypress-cucumber-preprocessor/esb
 
 export default defineConfig({
   e2e: {
+    baseUrl: 'http://localhost:5173',
     async setupNodeEvents(on, config) {
       // implement node event listeners here
       const bundler = createBundler({

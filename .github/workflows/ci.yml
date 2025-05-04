@@ -25,6 +25,21 @@ jobs:
       run: |
         cd bdd-vite-react
         npm install
+    
+    - name: Build application
+      run: |
+        cd bdd-vite-react
+        npm run build
+
+    - name: Start server
+      run: |
+        cd bdd-vite-react
+        npm run start
+    
+    - name: Wait for server to be ready
+      run: |
+        cd bdd-vite-react
+        npx wait-on http://localhost:5173
 
     - name: Run unit tests
       run: |
