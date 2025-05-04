@@ -15,6 +15,8 @@ npm run dev
 npm test
 
 ## Run BDD tests headless
+### First launch the website using npm run dev
+### Then run the BDD tests
 npm run bdd:headless
 
 ### Opens Cypress
