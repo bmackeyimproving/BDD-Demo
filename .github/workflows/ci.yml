@@ -20,6 +20,11 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: '23.10.0'
+    
+    - name: Install dependencies
+      run: |
+        cd bdd-vite-react
+        npm run lint
 
     - name: Install dependencies
       run: |
