@@ -25,3 +25,6 @@ dist-ssr
 
 # Cypress
 bdd-vite-react/cypress/screenshots
+
+# Package lock
+bdd-vite-react/package-lock.json
