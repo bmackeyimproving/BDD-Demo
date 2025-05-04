@@ -24,12 +24,12 @@ jobs:
     - name: Install dependencies
       run: |
         cd bdd-vite-react
-        npm run lint
-
-    - name: Install dependencies
+        npm install
+    
+    - name: Run lint
       run: |
         cd bdd-vite-react
-        npm install
+        npm run lint
     
     - name: Build application
       run: |
