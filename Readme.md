@@ -14,8 +14,11 @@ npm run dev
 ## Run unit tests
 npm test
 
-## Run BDD tests
-npm run bdd
+## Run BDD tests headless
+npm run bdd:headless
+
+### Opens Cypress
+npm run bdd:open
 
 # Component library
 https://mui.com/material-ui/react-tabs/
