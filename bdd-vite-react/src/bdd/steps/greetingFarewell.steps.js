@@ -34,3 +34,10 @@ Then('I should see text {string}', function (expectedText) {
   expect(elements.length).to.be.equal(1); // Ensure at least one match
   cleanup();
 });
+
+Then('I should see {string} in the data-testid {string}', function (expectedText, testId) {
+  const element = screen.getByTestId(testId);
+  if (!element || element.textContent !== expectedText) {
+    throw new Error(`Expected text "${expectedText}" not found in element with data-testid "${testId}"`);
+  }
+});

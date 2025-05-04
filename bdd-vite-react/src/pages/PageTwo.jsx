@@ -7,6 +7,7 @@ function PageTwo() {
     <div>
       <h1>Page Two</h1>
       <p>{getMessage()}</p>
+      <div data-testid="get-data">Get Data in ways that are not fragile</div>
     </div>
   );
 }
