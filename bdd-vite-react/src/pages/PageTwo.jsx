@@ -23,7 +23,7 @@ function PageTwo() {
       <div>
         <h1>Page Two</h1>
         <p>{getMessage()}</p>
-        <div data-testid="get-data">Get Data in ways that are not fragile</div>
+        <div data-test-example="get-data">Get Data in ways that are not fragile</div>
         <ThemeProvider theme={theme}>
           <div style={{ height: 400, width: '100%' }}>
             <DataGrid rows={rows} columns={columns} pageSize={5} checkboxSelection />
