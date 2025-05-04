@@ -34,7 +34,7 @@ jobs:
     - name: Start server
       run: |
         cd bdd-vite-react
-        npm run dev
+        npm run dev &
     
     - name: Wait for server to be ready
       run: |
