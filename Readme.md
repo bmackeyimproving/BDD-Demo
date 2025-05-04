@@ -16,10 +16,10 @@ npm test
 
 ## Run BDD tests headless
 ### First launch the website using npm run dev
+
 ### Then run the BDD tests
 npm run bdd:headless
-
-### Opens Cypress
+### OR Open Cypress - good for local development and debugging
 npm run bdd:open
 
 # Component library
