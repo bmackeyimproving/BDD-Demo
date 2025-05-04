@@ -1,4 +1,4 @@
-A Project template for React + Cucumber + Jest + Vite
+A Project template for React + Vite + Cypress w/ Cucumber + Jest
 
 Uses Github Actions for CI/CD
 
