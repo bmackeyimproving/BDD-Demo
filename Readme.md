@@ -28,4 +28,6 @@ https://mui.com/material-ui/react-tabs/
 
 # Helpful links 
 
-https://github.com/cucumber/cucumber-js-examples?tab=readme-ov-file
+https://docs.cypress.io/app/get-started/why-cypress#End-to-end-Testing
+
+https://github.com/badeball/cypress-cucumber-preprocessor
