@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSharedService } from '../services/sharedService';
 import { getMockData } from '../services/mockDataService';
-// import { DataGrid } from '@mui/x-data-grid';
+import { DataGrid } from '@mui/x-data-grid';
 
 function PageTwo() {
   const { getMessage } = useSharedService();
@@ -18,7 +18,7 @@ function PageTwo() {
         <p>{getMessage()}</p>
         <div data-testid="get-data">Get Data in ways that are not fragile</div>
         <div style={{ height: 400, width: '100%' }}>
-          {/* <DataGrid rows={rows} columns={columns} pageSize={5} checkboxSelection /> */}
+          <DataGrid rows={rows} columns={columns} pageSize={5} checkboxSelection />
         </div>
       </div>
   );

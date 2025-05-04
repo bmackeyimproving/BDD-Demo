@@ -34,4 +34,4 @@ jobs:
     - name: Run BDD tests
       run: |
         cd bdd-vite-react
-        npm run bdd
+        npm run bdd:headless
