@@ -1,6 +1,6 @@
 A Project template for React + Vite + Cypress w/ Cucumber + Jest + MUI + ESLint
 
-Uses Github Actions for CI/CD
+Uses Github Actions for CI/CD.  Gated by linting, testing, and BDD testing
 
 
 ## All commands run from FE base directory
