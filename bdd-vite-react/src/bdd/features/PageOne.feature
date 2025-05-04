@@ -16,8 +16,8 @@ Feature: Page One
   Scenario: Display components on Page One
     Given I am on the "Page One" page
     Given I have a name "Alice"
-    Then I should see "Hello World"
-    # And I should see "Hello, Alice!"
-    # And I should see "Goodbye, Alice!"
+    When I should see "Hello World"
+    Then I should see "Hello, Alice!"
+    And I should see "Goodbye, Alice!"
 
 

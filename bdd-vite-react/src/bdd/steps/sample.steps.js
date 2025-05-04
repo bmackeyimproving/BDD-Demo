@@ -24,5 +24,4 @@ Then('I should see {string}', function (text) {
   if (elements.length === 0) {
     throw new Error(`No elements found with the text: ${text}`);
   }
-  cleanup();
 });
