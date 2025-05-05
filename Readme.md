@@ -12,8 +12,7 @@ cd bdd-vite-react
 
 ## Setup
 npm install
-### Launches to http://localhost:5173/
-npm run dev
+npm run dev # Launches to http://localhost:5173/
 
 ## Run unit tests
 npm test
