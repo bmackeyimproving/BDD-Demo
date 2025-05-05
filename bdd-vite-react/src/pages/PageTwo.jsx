@@ -1,14 +1,7 @@
 import React from 'react';
 import { useSharedService } from '../services/sharedService';
 import { getMockData } from '../services/mockDataService';
-import { DataGrid } from '@mui/x-data-grid';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-
-const theme = createTheme({
-  palette: {
-    mode: 'dark',
-  },
-});
+import DataGridWrapper from '../components/DataGridWrapper';
 
 function PageTwo() {
   const { getMessage } = useSharedService();
@@ -24,11 +17,7 @@ function PageTwo() {
         <h1>Page Two</h1>
         <p>{getMessage()}</p>
         <div data-test-example="get-data">Get Data in ways that are not fragile</div>
-        <ThemeProvider theme={theme}>
-          <div style={{ height: 400, width: '100%' }}>
-            <DataGrid rows={rows} columns={columns} pageSize={5} checkboxSelection />
-          </div>
-        </ThemeProvider>
+        <DataGridWrapper rows={rows} columns={columns} pageSize={5} checkboxSelection />
       </div>
   );
 }

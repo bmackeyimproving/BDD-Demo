@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSharedService } from '../services/sharedService';
-import Child from '../Components/Child';
+import Child from '../components/Child';
 import { useState } from 'react';
 
 function PageThree() {
