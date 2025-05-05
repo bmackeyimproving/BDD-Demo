@@ -1,6 +1,5 @@
 import { fibonacci } from './Fibonacci';
 
-
 describe('add', () => {
   it('calculates Fibonacci numbers correctly', () => {
     expect(fibonacci(0)).toBe(0);
@@ -13,4 +12,3 @@ describe('add', () => {
     expect(fibonacci(10)).toBe(55);
   });
 });
-

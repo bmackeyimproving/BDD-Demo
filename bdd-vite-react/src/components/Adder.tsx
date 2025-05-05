@@ -1,13 +1,9 @@
 import { useState } from 'react';
+import { add } from './add';
 
-export function add(a: number, b: number): number {
-  return a + b;
-}
+export interface AdderProps {}
 
-export interface AdderProps {
-}
-
-export default function Adder({}: AdderProps) {
+export default function Adder() {
   const [num1, setNum1] = useState<number>(0);
   const [num2, setNum2] = useState<number>(0);
   const [result, setResult] = useState<number | null>(null);

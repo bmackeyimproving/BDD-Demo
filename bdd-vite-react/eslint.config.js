@@ -8,11 +8,23 @@ import prettier from 'eslint-plugin-prettier';
 
 export default [
   { ignores: ['dist', 'node_modules', 'cypress'] },
+  js.configs.recommended,
+  // Jest and Node globals for test and setup files
+  {
+    files: ['**/*.test.{js,ts,jsx,tsx}', 'jest.setup.js'],
+    languageOptions: {
+      globals: {
+        ...globals.jest,
+        ...globals.node,
+      },
+    },
+  },
   {
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
+      parser: tsEslintParser,
     },
     plugins: {
       '@typescript-eslint': tsEslintPlugin,
@@ -20,14 +32,9 @@ export default [
       'react-refresh': reactRefresh,
       prettier
     },
-    extends: [
-      'eslint:recommended',
-      'plugin:@typescript-eslint/recommended',
-      'plugin:prettier/recommended',
-    ],
-    parser: tsEslintParser,
     rules: {
       ...reactHooks.configs.recommended.rules,
+      'prettier/prettier': 'error', // Show Prettier errors as lint errors
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },
