@@ -1,7 +1,7 @@
 # 1. Use Page Component Architecture
 
 * Status: Accepted
-* Date: 2022-12-21
+* Date: 2025-05-04
 
 ## Context and Problem Statement
 
