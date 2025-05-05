@@ -4,8 +4,8 @@ Given('I open the Landing page', () => {
   cy.visit('/');
 });
 
-Given('I click the Page Two link', () => {
-  cy.get('a').contains('Page Two').click();
+Given('I click the Data Grid link', () => {
+  cy.get('a').contains('Data Grid').click();
 });
 
 Then('I should get data using HTML5 attributes', () => {

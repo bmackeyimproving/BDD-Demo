@@ -16,9 +16,9 @@ function App() {
         <nav className="fixed-nav">
           <Box>
             <List sx={{ display: 'flex' }}>
-              <ListItemButton component={Link} to="/">Page One</ListItemButton>
-              <ListItemButton component={Link} to="/page-two">Page Two</ListItemButton>
-              <ListItemButton component={Link} to="/page-three">Page Three</ListItemButton>
+              <ListItemButton component={Link} to="/">Home</ListItemButton>
+              <ListItemButton component={Link} to="/page-two">Data Grid</ListItemButton>
+              <ListItemButton component={Link} to="/page-three">Sandbox Page</ListItemButton>
             </List>
           </Box>
         </nav>
