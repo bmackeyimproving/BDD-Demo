@@ -1,6 +1,9 @@
 export default {
-  preset: 'ts-jest',
   testEnvironment: 'jsdom',
+  transform: {
+    '^.+\\.[jt]sx?$': ['babel-jest', { configFile: './babel.config.js' }],
+  },
+  moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx', 'json', 'node'],
   moduleNameMapper: {
     '\\.(css|less)$': 'identity-obj-proxy',
   },
