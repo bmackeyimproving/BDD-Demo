@@ -4,6 +4,9 @@ A Project template for React + Vite + Cypress w/ Cucumber + Jest + MUI + ESLint 
 
 Uses Github Actions for CI/CD.  Gated by linting, testing, and BDD testing
 
+## Architecture Decisions
+See [bdd-vite-react/docs/adr/](bdd-vite-react/docs/adr/) for key architectural decisions in this project.
+
 ## All commands run from FE base directory
 cd bdd-vite-react
 
