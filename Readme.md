@@ -11,8 +11,10 @@ See [bdd-vite-react/docs/adr/](bdd-vite-react/docs/adr/) for key architectural d
 cd bdd-vite-react
 
 ## Setup
+```bash
 npm install
 npm run dev # Launches to http://localhost:5173/
+```
 
 ## Run unit tests
 npm test
