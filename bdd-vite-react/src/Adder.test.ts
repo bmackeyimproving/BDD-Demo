@@ -1,4 +1,4 @@
-import { add } from './components/Adder';
+import { add } from './components/add';
 
 describe('add', () => {
   it('adds two numbers correctly', () => {
