@@ -1,8 +1,6 @@
 import React from 'react';
 import { useSharedService } from '../services/sharedService';
-import HelloWorld from '../components/HelloWorld';
-import Greeting from '../components/Greeting';
-import Adder from '../components/Adder';
+import { HelloWorld, Greeting, Adder } from '../components';
 
 function PageOne() {
   const { getMessage } = useSharedService();

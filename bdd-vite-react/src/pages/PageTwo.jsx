@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSharedService } from '../services/sharedService';
 import { getMockData } from '../services/mockDataService';
-import DataGridWrapper from '../components/DataGridWrapper';
+import { DataGridWrapper } from '../components';
 
 function PageTwo() {
   const { getMessage } = useSharedService();
