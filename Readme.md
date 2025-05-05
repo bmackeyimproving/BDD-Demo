@@ -1,5 +1,11 @@
 ![CI](https://github.com/bmackeyimproving/BDD-Demo/actions/workflows/ci.yml/badge.svg)
 
+![Node.js Version](https://img.shields.io/node/v/vite)
+
+![npm](https://img.shields.io/npm/v/<package-name>)
+
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://prettier.io/)
+
 A Project template for React + Vite + Cypress w/ Cucumber + Jest + MUI + ESLint + Prettier
 
 Uses Github Actions for CI/CD.  Gated by linting, testing, and BDD testing
