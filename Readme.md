@@ -2,7 +2,7 @@
 
 ![Node.js Version](https://img.shields.io/node/v/vite)
 
-![npm](https://img.shields.io/npm/v/<package-name>)
+![npm](https://img.shields.io/npm/v/bdd-vite-react)
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://prettier.io/)
 
