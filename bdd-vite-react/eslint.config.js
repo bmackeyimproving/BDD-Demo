@@ -7,7 +7,7 @@ import tsEslintParser from '@typescript-eslint/parser';
 import prettier from 'eslint-plugin-prettier';
 
 export default [
-  { ignores: ['dist', 'node_modules', 'cypress'] },
+  { ignores: ['dist', 'node_modules', 'cypress', '**/*.test.jsx'] },
   js.configs.recommended,
   // Jest and Node globals for test and setup files
   {
