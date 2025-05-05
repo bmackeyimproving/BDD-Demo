@@ -1,4 +1,4 @@
-A Project template for React + Vite + Cypress w/ Cucumber + Jest + MUI + ESLint
+A Project template for React + Vite + Cypress w/ Cucumber + Jest + MUI + ESLint + Prettier
 
 Uses Github Actions for CI/CD.  Gated by linting, testing, and BDD testing
 
